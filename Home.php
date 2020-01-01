@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+    <link rel="icon" href="Assets/IMG/Tlogo.png">
+    <link rel="stylesheet"href="Assets\CSS\Product.css">
 
 
     <title>Online Shopping in Pakistan:Fashion,Electronics & Books-Daraz.pk</title>
@@ -47,7 +49,7 @@
                 
                 <div class="collapse navbar-collapse d-flex">
                  <ul class="navbar-nav">
-                   <li class="nav-item pl-4">
+                   <li class="nav-item pl-4"> 
                      <a class="nav-link" href="#">
                      <img src="Assets\IMG\logo.png" alt="DARAZ" height="41" width="136"> </a>
                    </li>
@@ -94,33 +96,69 @@
           </div>
         </div>
       </div>
-      
-      <div class="card-group">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+      <div style=" height:50px;"></div>
+      <div>
+        <div class="card py-1 border border-0">
+          <img src="Assets/IMG/DM.png" alt="DM" style="height:3%;width:3%">
+        </div>
+      </div>
+      <div class="card w-75 border border-0 ">
+  <div class="card-body">
+    <h5 class="card-title">Daraz Mall</h5>
+  </div>
+</div>
+
+  
+  <div class="card-deck">
+  <div class="card border border-light ml-5 pb-2 h-25" id="c">
+    <img class="card-img-top" src="Assets/IMG/products/P1.jpg" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <h6 class="card-title text-center">Hommold</h6>
+      <small class="text-muted text text-center">Hommold</small>
+    </div>
+    
+  </div>
+  <div class="card border border-light h-25"id="c">
+    <img class="card-img-top" src="Assets/IMG/products/P2.jpg" alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title text-center">Oxford Kniting Mills</h5>
+      <small class="text-muted text text-center">Fashion</small>
+    </div></div>
+
+
+  <div class="card border border-light h-25" id="c">
+    <img class="card-img-top" src="Assets/IMG/products/P3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title text-center">Revoulution Beauty London</h6>
+      <small class="text-muted text text-center">Celebrate The Revoulution </small>
+    </div>    
+  </div>
+  <div class="card border border-light h-25"id="c">
+    <img class="card-img-top" src="Assets/IMG/products/P4.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">Rivaj UK</h5>
+      <small class="text-muted text text-center">Beauty And MakeUp</small>
+    </div></div>
+
+    <div class="card border border-light  h-25" id="c">
+    <img class="card-img-top" src="Assets/IMG/products/P5.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title text-center">Speed Private Limited</h6>
+      <small class="text-muted text text-center">Speed Private Limited</small>
+    </div>
+    
+  </div>
+  <div class="card border border-light h-25"id="c">
+    <img class="card-img-top" src="Assets/IMG/products/P6.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title text-center">Fun WorldPk</h5>
+      <small class="text-muted text text-center">Toys & Barly Store</small>
     </div>
   </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  </div>
+</div>
+
+
+
 
 
     <!-- Optional JavaScript -->

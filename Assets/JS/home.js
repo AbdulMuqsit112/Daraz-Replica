@@ -7,3 +7,4 @@ $('.dropdown').on('mouseover', '.dropdown', function(e) {
 $('.dropdown').on('mouseleave', '.dropdown', function(e) { 
     $(this).children('.dropdown-toggle').dropdown('hide');
 });
+
