@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets\CSS\home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
     <link rel="icon" href="Assets/IMG/Tlogo.png">
     <link rel="stylesheet"href="Assets\CSS\Product.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 
 
     <title>Online Shopping in Pakistan:Fashion,Electronics & Books-Daraz.pk</title>
@@ -45,11 +48,11 @@
                 </div>
               </nav>
 
-              <nav class="navbar navbar-expand  navbar-light ">
+              <nav class="navbar navbar-expand  navbar-light" style="background-color: #ffffff">
                 
                 <div class="collapse navbar-collapse d-flex">
                  <ul class="navbar-nav">
-                   <li class="nav-item pl-4"> 
+                   <li class="nav-item pl-4">
                      <a class="nav-link" href="#">
                      <img src="Assets\IMG\logo.png" alt="DARAZ" height="41" width="136"> </a>
                    </li>
@@ -72,15 +75,16 @@
                     </ul>
                </div>
              </nav>
+             <div>
+               <!-- Image Slider -->
+               <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"class=""></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"class=""></li>
+                  </ol>
 
-
-<div id="carousel" class="carousel slide" data-ride="carousel">
-<ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"class=""></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"class=""></li>
-  </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="Assets\IMG\home\home slider image1.jpg" alt="First slide"height="342">
@@ -96,76 +100,264 @@
           </div>
         </div>
       </div>
-      <div style=" height:50px;"></div>
-      <div>
-        <div class="card py-1 border border-0">
+    
+      
+    <div class="container ml-2" style="position: absolute;left: 0;top:0;margin: 100px;">
+      
+      
+<ul class ="list-group menu w-25 border border-light" style="list-style-type:none;">
+    <li id="a" class="menu py-1">Electronic Device <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="b" class="menu pb-1">Electronic Accessories <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="c" class="menu pb-1">Tv & Home Appliances <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li> 
+    <li id="d" class="menu pb-1">Health and Beauty <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="e" class="menu pb-1">Babies & Toys <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="f" class="menu pb-1">Groceries & Pets <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="g" class="menu pb-1">Home & Lifestyle <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="h" class="menu pb-1">Women's Fashion <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="i" class="menu pb-1">Men's Fashion <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="j" class="menu pb-1">Watches,Bags & Jewelery <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="k" class="menu pb-1">Sports & Outdoor <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+    <li id="l" class="menu pb-2">Automotive & Motorbike <span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li> 
+    </ul>
+  </div>
+  </div>
+
+    <div class="" hidden id="A" style="float: right;">
+    <ul style="list-style-type:none;">            
+        <li id="aa" class="sub-menu" >Mobile Phones<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="ab" class="sub-menu" >Tablets<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="ac" class="sub-menu" >Laptops<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="ad" class="sub-menu" >Desktops<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="ae" class="sub-menu" >Gamming Console<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="af" class="sub-menu" >Action/Video Cameras<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="ag" class="sub-menu" >Security Cameras<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="ah" class="sub-menu" >Digital Cameras<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="ai" class="sub-menu" >Insurance & Protection<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        <li id="aj" class="sub-menu" >Used Phones<span hidden id="arrow"><i class="fa fa-chevron-right" style="font-size:24px"></i></span></li>
+        </ul>
+    </div>
+    <div id="B" class="sub-menu d-none" style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Accessories</li>
+        <li>Audio</li>
+        <li>Wearable</li>
+        <li>Console Accessories</li>
+        <li>Camera Accessories</li>
+        <li>Computer Accessories</li>
+        <li>Storage</li>
+        <li>Printers</li>
+        <li>Computer Components</li>
+        <li>Network Components</li>
+        </ul>
+    </div>
+    <div id="C" class="sub-menu  d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="D"  class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="E" class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="F"  class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="G"  class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="H" class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="I" class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="J"  class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="K"  class="sub-menu d-none" hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div id="L" class="sub-menu d-none"  hidden style=" float: right;">
+    <ul style="list-style-type:none;">            
+        <li>Mobile Phones</li>
+        <li>Tablets</li>
+        <li>Laptops</li>
+        <li>Desktops</li>
+        <li>Gamming Console</li>
+        <li>Action/Video Cameras</li>
+        <li>Security Cameras</li>
+        <li>Digital Cameras</li>
+        <li>Insurance & Protection</li>
+        <li>Used Phones</li>
+        </ul>
+    </div>
+    <div style=" height:50px;"></div>
+    <div class="card py-1 border border-0 ml-5"style="background-color:#F0F0F0;">
           <img src="Assets/IMG/DM.png" alt="DM" style="height:3%;width:3%">
         </div>
       </div>
-      <div class="card w-75 border border-0 ">
-  <div class="card-body">
+      <div class="card w-75 border border-0 "style="background-color:#F0F0F0;">
+  <div class="card-body ml-3">
     <h5 class="card-title">Daraz Mall</h5>
   </div>
 </div>
 
+
+
+
   
   <div class="card-deck">
-  <div class="card border border-light ml-5 pb-2 h-25" id="c">
+  <div class="card border border-light ml-5 h-25 my-0" id="product">
     <img class="card-img-top" src="Assets/IMG/products/P1.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h6 class="card-title text-center">Hommold</h6>
-      <small class="text-muted text text-center">Hommold</small>
+    <div class="card-body text-center">
+      <h6 class="card-title ">Hommold</h6>
+      <small class="text-muted">Hommold</small>
     </div>
     
   </div>
-  <div class="card border border-light h-25"id="c">
+  <div class="card border border-light h-25 my-0"id="product">
     <img class="card-img-top" src="Assets/IMG/products/P2.jpg" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title text-center">Oxford Kniting Mills</h5>
-      <small class="text-muted text text-center">Fashion</small>
+    <div class="card-body text-center">
+    <h6 class="card-title">Oxford Kniting Mills</h6>
+      <small class="text-muted ">Fashion</small>
     </div></div>
 
 
-  <div class="card border border-light h-25" id="c">
+  <div class="card border border-light h-25 my-0" id="product">
     <img class="card-img-top" src="Assets/IMG/products/P3.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h6 class="card-title text-center">Revoulution Beauty London</h6>
-      <small class="text-muted text text-center">Celebrate The Revoulution </small>
+    <div class="card-body text-center">
+      <h6 class="card-title">Revoulution Beauty London</h6>
+      <small class="text-muted ">Celebrate The Revoulution </small>
     </div>    
   </div>
-  <div class="card border border-light h-25"id="c">
+  <div class="card border border-light h-25 my-0"id="product">
     <img class="card-img-top" src="Assets/IMG/products/P4.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title text-center">Rivaj UK</h5>
-      <small class="text-muted text text-center">Beauty And MakeUp</small>
+    <div class="card-body text-center">
+      <h6 class="card-title">Rivaj UK</h6>
+      <small class="text-muted ">Beauty And MakeUp</small>
     </div></div>
 
-    <div class="card border border-light  h-25" id="c">
+    <div class="card border border-light h-25 my-0" id="product">
     <img class="card-img-top" src="Assets/IMG/products/P5.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h6 class="card-title text-center">Speed Private Limited</h6>
-      <small class="text-muted text text-center">Speed Private Limited</small>
+    <div class="card-body text-center">
+      <h6 class="card-title">Speed Private Limited</h6>
+      <small class="text-muted">Speed Private Limited</small>
     </div>
     
   </div>
-  <div class="card border border-light h-25"id="c">
+  <div class="card border border-light h-25 my-0"id="product">
     <img class="card-img-top" src="Assets/IMG/products/P6.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title text-center">Fun WorldPk</h5>
-      <small class="text-muted text text-center">Toys & Barly Store</small>
+    <div class="card-body text-center">
+      <h6 class="card-title">Fun WorldPk</h6>
+      <small class="text-muted ">Toys & Barly Store</small>
     </div>
   </div>
 </div>
 
 
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="Assets\JS\home.js"></script>
+    <script src="Assets\JS\home.js"></script>
+    <script src="Assets\JS\menu.js"></script>
+  
 </body>
 </html>
