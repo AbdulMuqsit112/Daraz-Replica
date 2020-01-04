@@ -1,3 +1,4 @@
+$( document ).ready()
 var as;
 var idd;
 $('.menu').mouseover(function() {
@@ -61,23 +62,19 @@ $('.menu').mouseover(function() {
          
     }
  });
+ 
 
 
 
-$( ".menu" )
-  .mouseenter(function() {
-    $('#'+idd).append( $( "#"+as ) );  
-    $('#'+idd).css("background-color", "#60a5ff");
-    
-    $('#'+as).show();
-    $('#'+as).css('background-color','white')
-    $('#'+as).animate({
-        width:200
-    })
-  })
-  .mouseleave(function() {
-    $('.menu').css("background-color", "#ffffff");
-    $('#'+as).hide();
-  });
-
+$('.menu').hover(function()
+{
   
+    $('#'+idd).css("background-color", "#60a5ff");
+     $('#'+as).removeClass('d-none');
+     $('#'+as).css('background-color','white');
+
+},function()
+{
+     $('#'+as).addClass('d-none');
+     $('.menu').css("background-color", "#ffffff");
+})
