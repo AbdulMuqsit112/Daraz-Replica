@@ -70,11 +70,29 @@ $('.menu').hover(function()
 {
   
     $('#'+idd).css("background-color", "#60a5ff");
-     $('#'+as).removeClass('d-none');
+    $('#arrow'+idd).removeClass('d-none');
+    $('#'+as).removeClass('d-none');
      $('#'+as).css('background-color','white');
 
 },function()
 {
+
      $('#'+as).addClass('d-none');
      $('.menu').css("background-color", "#ffffff");
-})
+     $('#arrow'+idd).removeClass('d-none');
+     $('#arrowa').addClass('d-none');
+     $('#arrowb').addClass('d-none');
+     $('#arrowc').addClass('d-none');
+     $('#arrowd').addClass('d-none');
+     $('#arrowe').addClass('d-none');
+     $('#arrowf').addClass('d-none');
+     $('#arrowg').addClass('d-none');
+     $('#arrowh').addClass('d-none');
+     $('#arrowi').addClass('d-none');
+     $('#arrowj').addClass('d-none');
+     $('#arrowk').addClass('d-none');
+     $('#arrowl').addClass('d-none');
+
+
+});
+
