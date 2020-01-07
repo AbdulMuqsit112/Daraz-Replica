@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="Assets/IMG/Tlogo.png">
     <link rel="stylesheet"href="Assets\CSS\Product.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
+
 
 
     <title>Online Shopping in Pakistan:Fashion,Electronics & Books-Daraz.pk</title>
@@ -52,7 +55,7 @@
                 <div class="collapse navbar-collapse d-flex">
                  <ul class="navbar-nav">
                    <li class="nav-item pl-4">
-                     <a class="nav-link" href="#">
+                     <a class="nav-link" href="home.php">
                      <img src="Assets\IMG\logo.png" alt="DARAZ" height="41" width="136"> </a>
                    </li>
                    <li class="nav-item  pl-5 pr-0" >
@@ -65,7 +68,7 @@
                              </li>     
                              <li class="nav-item pl-2">
                                    <a class="nav-link" href="#">
-                                   <i class='fa fa-shopping-cart' style='font-size:28px'></i></a>
+                                   <i class='fa fa-shopping-cart' style='font-size:28px'></i><span id="cart-item" class="badge badge-danger"></span></a>
                                  </li>           
                   <li class="nav-item pl-3">
                   <a class="nav-link " href="#">
@@ -288,12 +291,9 @@
             <li>Used Phones</li>
             </ul>
         </div>
-
-
-
   </div>
     
-    
+
     
     <div style=" height:50px;"></div>
     <div class="card py-1 border border-0 ml-5"style="background-color:#F0F0F0;">
@@ -306,63 +306,92 @@
   </div>
 </div>
 
-
-
-
-  
-  <div class="card-deck">
-  <div class="card border border-light ml-5 h-25 my-0" id="product">
-    <img class="card-img-top" src="Assets/IMG/products/P1.jpg" alt="Card image cap">
-    <div class="card-body text-center">
-      <h6 class="card-title ">Hommold</h6>
-      <small class="text-muted">Hommold</small>
+<div class="container">
+  <div id ="message"></div>
+<div class="row mt-2 pb-3">
+<?php
+include 'config.php';
+$stmt = $conn->prepare("SELECT * FROM product");
+$stmt->execute();
+$result = $stmt->get_result();
+while($row = $result->fetch_assoc()):
+?> 
+<div class="col-sm-6 col-md-4 col-lg-3 mb-2" > 
+<div class="card-deck"  >  
+<div class="card border border-light "  id="product">
+    <img class="card-img-top" src="<?= $row['product_image'] ?>" >
+    <div class="card-body border border-light" style="background-color: #ffffff">
+      <h4 class="card-title text-center text-info"><?= $row['product_name'] ?></h4>
+      <h5 class="card-text text-center text-danger">Rs. <?= number_format($row['product_price'],2) ?></h5> 
     </div>
-    
-  </div>
-  <div class="card border border-light h-25 my-0"id="product">
-    <img class="card-img-top" src="Assets/IMG/products/P2.jpg" alt="Card image cap">
-    <div class="card-body text-center">
-    <h6 class="card-title">Oxford Kniting Mills</h6>
-      <small class="text-muted ">Fashion</small>
-    </div></div>
-
-
-  <div class="card border border-light h-25 my-0" id="product">
-    <img class="card-img-top" src="Assets/IMG/products/P3.jpg" alt="Card image cap">
-    <div class="card-body text-center">
-      <h6 class="card-title">Revoulution Beauty London</h6>
-      <small class="text-muted ">Celebrate The Revoulution </small>
-    </div>    
-  </div>
-  <div class="card border border-light h-25 my-0"id="product">
-    <img class="card-img-top" src="Assets/IMG/products/P4.jpg" alt="Card image cap">
-    <div class="card-body text-center">
-      <h6 class="card-title">Rivaj UK</h6>
-      <small class="text-muted ">Beauty And MakeUp</small>
-    </div></div>
-
-    <div class="card border border-light h-25 my-0" id="product">
-    <img class="card-img-top" src="Assets/IMG/products/P5.jpg" alt="Card image cap">
-    <div class="card-body text-center">
-      <h6 class="card-title">Speed Private Limited</h6>
-      <small class="text-muted">Speed Private Limited</small>
-    </div>
-    
-  </div>
-  <div class="card border border-light h-25 my-0"id="product">
-    <img class="card-img-top" src="Assets/IMG/products/P6.jpg" alt="Card image cap">
-    <div class="card-body text-center">
-      <h6 class="card-title">Fun WorldPk</h6>
-      <small class="text-muted ">Toys & Barly Store</small>
+    <div class="card-footer border border-light" style="background-color: #ffffff">
+    <form action="" class="form-submit">
+      <input type="hidden" class="pid" value="<?= $row['id']?>">
+      <input type="hidden" class="pname" value="<?= $row['product_name']?>">
+      <input type="hidden" class="pprice" value="<?= $row['product_price']?>">
+      <input type="hidden" class="pimage" value="<?= $row['product_image']?>">
+      <input type="hidden" class="pcode" value="<?= $row['product_code']?>">
+      <button class="btn btn-block addItemBtn" style="background-color: #FE701E; color:#ffffff">Add To Cart</button>
+    </form>
     </div>
   </div>
 </div>
+</div>
+<?php endwhile; ?>
+</div>
+</div>
+
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(".addItemBtn").click(function(e){
+        e.preventDefault();
+        var $form =$(this).closest(".form-submit");
+        var pid = $form.find(".pid").val();
+        var pname = $form.find(".pname").val();
+        var pprice = $form.find(".pprice").val();
+        var pimage = $form.find(".pimage").val();
+        var pcode = $form.find(".pcode").val();
+
+        $.ajax({
+          url:'action.php',
+          method:'post',
+          data:{pid:pid,pname:pname,pprice:pprice,pimage:pimage,pcode:pcode},
+          success:function(response){
+            $('#message').html(response);
+            window.scrollTo(0,500);
+            load_cart_item_number();
+          }
+        });
+      });
+      load_cart_item_number();
+
+      function load_cart_item_number(){
+        $.ajax({
+          url:'action.php',
+          method:'get',
+          data:{cartItem:"cart_item"},
+          success:function(response)
+          {
+            $('#cart-item').html(response);
+
+
+          }
+        })
+
+      }
+
+
+
+    });
+    </script>
+
     <script src="Assets\JS\home.js"></script>
     <script src="Assets\JS\menu.js"></script>
-  
+    
+   
 </body>
 </html>
