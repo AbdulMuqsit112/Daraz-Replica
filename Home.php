@@ -67,7 +67,7 @@
                                <i class="fa fa-search pl-2 mt-2"></i></button></a>
                              </li>     
                              <li class="nav-item pl-2">
-                                   <a class="nav-link" href="#">
+                                   <a class="nav-link" href="cart.php">
                                    <i class='fa fa-shopping-cart' style='font-size:28px'></i><span id="cart-item" class="badge badge-danger"></span></a>
                                  </li>           
                   <li class="nav-item pl-3">
