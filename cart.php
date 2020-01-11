@@ -1,5 +1,6 @@
 <?php 
 session_start();
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -43,12 +44,21 @@ session_start();
                     <li class="nav-item active py-0">
                             <a class="nav-link py-0" href="#">TRACK MY ORDER</a>
                           </li>
-                          <li class="nav-item active py-0">
+                          <?php if (!empty($_SESSION['name'])) { // or however you determine they're logged in ?>
+                              <li class="nav-item active py-0">
+                                <a class="nav-link py-0" href="#"><?php echo $_SESSION['name'];?></a>
+                              </li>      
+                              <li class="nav-item active py-0">
+                                    <a class="nav-link py-0" href="home.php" onclick="<?php $_SESSION['name']=null; sleep(1);?>">Log out</a>
+                                  </li>
+                                  <?php } else { ?>
+                                  <li class="nav-item active py-0">
                                 <a class="nav-link py-0" href="login.php">LOGIN</a>
                               </li>      
                               <li class="nav-item active py-0">
                                     <a class="nav-link py-0" href="signup.php">SIGNUP</a>
-                                  </li>           
+                                  </li>    
+                                  <?php } ?>           
                      </ul>
                 </div>
               </nav>
@@ -153,9 +163,6 @@ session_start();
                     </div>
                 </div>
                                
-                    
-        
-
         <script type="text/javascript">
     $(document).ready(function(){
       load_cart_item_number();

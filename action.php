@@ -59,4 +59,28 @@ if(isset($_GET['remove']))
 
 }
 
+if(isset($_POST['action']) && isset($_POST['action']) == 'signup')
+{
+
+    $name =$_POST['name'];
+    $email =$_POST['email'];
+    $password =$_POST['password'];
+    $phone =$_POST['phone'];
+    $address =$_POST['address'];
+    $data ='';
+
+    $stmt = $conn->prepare("INSERT INTO user (name,email,password,phone,address) VALUES (?,?,?,?,?)");
+    $stmt->bind_param("sssss",$name,$email,$password,$phone,$address);
+    $stmt->execute();
+
+    $data .= '<div class ="text-center">
+            <h1 class="display-4 mt-2">Sucessfully Signed-up</h1>
+    
+              </div>';
+echo $data;
+sleep(2);
+}
+
+
+
 ?>

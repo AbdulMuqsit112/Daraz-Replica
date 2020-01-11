@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,7 +27,7 @@
   </head>
   <body>
 
-        <nav class="navbar navbar-expand-sm py-0 navbar-light " style="background-color:#F0F0F0;">
+        <nav class="navbar navbar-expand-sm py-0 navbar-light " style="background-color:#F0F0F0;" id="navbar">
                 
                  <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNavDropdown">
                   <ul class="navbar-nav">
@@ -40,12 +43,21 @@
                     <li class="nav-item active py-0">
                             <a class="nav-link py-0" href="#">TRACK MY ORDER</a>
                           </li>
-                          <li class="nav-item active py-0">
+                          <?php if (!empty($_SESSION['name'])) { ?>
+                              <li class="nav-item active py-0">
+                                <a class="nav-link py-0" href="#"><?php echo $_SESSION['name'];?></a>
+                              </li>      
+                              <li class="nav-item active py-0">
+                                    <a class="nav-link py-0" href="home.php" onclick="<?php $_SESSION['name']=null; sleep(1);?>">Log out</a>
+                                  </li>
+                                  <?php } else { ?>
+                                  <li class="nav-item active py-0">
                                 <a class="nav-link py-0" href="login.php">LOGIN</a>
                               </li>      
                               <li class="nav-item active py-0">
                                     <a class="nav-link py-0" href="signup.php">SIGNUP</a>
-                                  </li>           
+                                  </li>    
+                                  <?php } ?>
                      </ul>
                 </div>
               </nav>
@@ -295,19 +307,18 @@
     
 
     
-    <div style=" height:50px;"></div>
-    <div class="card py-1 border border-0 ml-5"style="background-color:#F0F0F0;">
-          <img src="Assets/IMG/DM.png" alt="DM" style="height:3%;width:3%">
-        </div>
+    <div style=" height:70px;"></div>
       </div>
+      
       <div class="card w-75 border border-0 "style="background-color:#F0F0F0;">
   <div class="card-body ml-3">
-    <h5 class="card-title">Daraz Mall</h5>
+    <h3 class="card-title">Just For You</h3>
   </div>
 </div>
-
 <div class="container">
-  <div id ="message"></div>
+
+
+<div id ="message"></div>
 <div class="row mt-2 pb-3">
 <?php
 include 'config.php';
