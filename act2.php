@@ -17,13 +17,12 @@ if(isset($_POST['login']) )
              }
              else
              {
-                 printf("ghalat");
+                 echo("Wrong Password or User Name");
              }
 
             
             
 }
-   
-    
 
+    
 ?>

@@ -58,7 +58,7 @@ session_start();
                         <div class="card-footer" style="background-color: white">
                            <div class="row">  
                         <div class="">
-                            <a href="" class="btn btn-outline-secondary pull-right">
+                            <a href="home.php" class="btn  pull-right" style="background-color: #FE701E ;color:#ffffff">
                                 Update shopping cart
                             </a>
                         </div>

@@ -54,8 +54,9 @@ $result = $stmt->get_result();
 while($row = $result->fetch_assoc()):
 ?> 
 <div class="col-sm-6 col-md-4 col-lg-3 mb-2" > 
-<div class="card-deck"  >  
-<div class="card border border-light "  id="product">
+<a href="product_page.php?id=<?= $row['id'];?>" style="text-decoration: none;">
+<div class="card-deck"> 
+<div class="card border border-light ">
     <img class="card-img-top" src="<?= $row['product_image'] ?>" >
     <div class="card-body border border-light" style="background-color: #ffffff">
       <h4 class="card-title text-center text-info"><?= $row['product_name'] ?></h4>
@@ -73,11 +74,12 @@ while($row = $result->fetch_assoc()):
     </div>
   </div>
 </div>
+</a>
 </div>
+
 <?php endwhile; ?>
 </div>
 </div>
-
 
 
     <!-- Optional JavaScript -->
@@ -104,6 +106,7 @@ while($row = $result->fetch_assoc()):
           }
         });
       });
+
       load_cart_item_number();
 
       function load_cart_item_number(){
@@ -125,7 +128,6 @@ while($row = $result->fetch_assoc()):
 
     });
     </script>
-
     <script src="Assets\JS\home.js"></script>
     <script src="Assets\JS\menu.js"></script>
 </body>
